@@ -1,0 +1,93 @@
+@import "../../index.css";
+
+.home {
+  height: calc(100vh - var(--navbar-height));
+  position: relative;
+  top: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+
+.home-container h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--mainBlue);
+  margin: auto;
+}
+
+.home-roof {
+  width: 150%;
+  height: 200px;
+  background-color: var(--mainBlue);
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.home-door {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+
+.home-chimney {
+  position: absolute;
+  height: 150px;
+  width: 40px;
+  background-color: var(--mainBlue);
+  top: -200px;
+  left: 20px;
+}
+
+.home-window {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  right: 30px;
+  bottom: 40px;
+}
+
+.home-window::before,
+.home-window::after {
+  content: "";
+  width: 110%;
+  height: 3px;
+  background-color: var(--mainBlue);
+  position: absolute;
+}
+
+.home-window::before {
+  top: 30px;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.home-window::after {
+  transform: rotate(90deg);
+  left: -5%;
+  top: 50%;
+}

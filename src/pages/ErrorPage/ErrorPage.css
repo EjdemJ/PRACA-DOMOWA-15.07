@@ -1,0 +1,11 @@
+@import "../../index.css";
+
+.error-page {
+  height: calc(100vh - var(--navbar-height));
+  position: relative;
+  top: var(--navbar-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

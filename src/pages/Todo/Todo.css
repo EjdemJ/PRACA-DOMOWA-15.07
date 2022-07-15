@@ -1,0 +1,76 @@
+@import "../../index.css";
+
+.todo {
+  height: calc(100vh - var(--navbar-height));
+  position: relative;
+  top: var(--navbar-height);
+}
+
+.input-controls {
+  padding: 30px;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mainBlue);
+  border-radius: 30px;
+}
+
+.input-controls input {
+  width: 100%;
+  height: 36px;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+  flex: 5;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 0.2s;
+}
+
+.input-controls input:focus {
+  padding: 0 10px;
+}
+
+.input-controls input::placeholder {
+  font-size: 17px;
+}
+
+.input-controls button {
+  padding: 4px;
+  border: 1px solid white;
+  background-color: var(--mainBlue);
+  color: white;
+  flex: 2;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all 0.2s;
+  font-size: 17px;
+}
+
+.input-controls button:hover {
+  flex: 2.2;
+}
+
+.list {
+  width: 30%;
+  margin: 30px auto;
+  list-style: none;
+}
+
+.list li {
+  background-color: var(--mainBlue);
+  margin: 5px 0;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}
